@@ -1,0 +1,288 @@
+*{
+
+	margin: 0px 0px;
+	/*color: floralwhite;*/
+	box-sizing: border-box;
+	
+ 
+}
+
+body{
+	background-image: url("surgery.jpg");
+	width:100% ;
+	max-height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex:1;
+	
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+
+
+
+}
+.logo{
+	font-size: 25px;
+	font-weight: 600;
+	width:40%;
+	padding-left: 40px;
+	padding-top: 15px;
+	/*color: floralwhite;*/
+	color: #33FFF3;
+}
+.logo:hover{
+	color: floralwhite;
+}
+ul{
+	list-style: none;
+	display: flex;
+	padding-top: 20px;
+	
+
+}
+
+
+
+
+ a{
+
+	text-decoration: none;
+	padding-right: 40px;
+  color: floralwhite;
+  
+}
+
+ a:hover {
+  color: #33FFF3;
+
+}
+
+.main_content{
+	position: relative;
+	top: 450px;
+	font-family: Georgia;
+	font-size: 2em;
+	color: black;
+	width: 30%;
+	font-weight: 800;
+	padding-left: 150px;
+	
+
+}
+
+.main_content1{
+
+	position: relative;
+	top: 300px;
+	font-family: Georgia;
+	font-size: 1.5em;
+	color: black;
+	width: 40%;
+	font-weight: 400;
+	padding-left: 100px;
+
+}
+
+ol{
+	list-style: none;
+}
+
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+h3{
+	margin-top: 70px ;
+	font-family: monospace;
+}
+
+h5{
+	top: 80px;
+
+}
+
+/*Styling the Contact Page */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.heady{
+
+	color: #33FFF3;
+	font-size: 30px;
+}
+
+
+
+
+
+table {
+	background-color: #45a049;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top:200px;
+	
+}
+.main content{
+	font-weight: 200;
+	font-family: Georgia;
+	font-size: 50px;
+}
+
+
+
+.carousel input {
+	position: absolute;
+	left: -10000px;
+  }
+  
+  .carousel {
+	width: 60%;
+	height: 50%;
+	display: flex;
+	align-self: center;
+	margin-top: 100px;
+	position: relative;
+
+  }
+  
+  .carousel__stage {
+	overflow: hidden;
+	font-size: 0;
+	white-space: nowrap;
+	width: 100%;
+	height: 100%;
+	transition: text-indent 500ms;
+	position: relative;
+  }
+  
+  .carousel__item {
+	display: inline-block;
+	text-indent: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .carousel__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .carousel__control {
+	display: none;
+	position: absolute;
+	top: 45%;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+	z-index: 1;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 20px;
+	cursor: pointer;
+  }
+  
+  .carousel__prev {
+	left: 0;
+  }
+  
+  .carousel__prev::after {
+	content: ' << ';
+	display: inline-block;
+  }
+  
+  .carousel__next {
+	right: 0;
+  }
+  
+  .carousel__next::after {
+	content: ' >> ';
+	display: inline-block;
+  }
+  
+  #carousel1:checked ~ .carousel__stage {
+	text-indent: 0;
+  }
+  
+  #carousel2:checked ~ .carousel__stage {
+	text-indent: -100%;
+  }
+  
+  #carousel3:checked ~ .carousel__stage {
+	text-indent: -200%;
+  }
+  
+  #carousel4:checked ~ .carousel__stage {
+	text-indent: -300%;
+  }
+  
+  #carousel1:checked ~ .carousel__stage .carousel__item:nth-child(1) .carousel__control,
+  #carousel2:checked ~ .carousel__stage .carousel__item:nth-child(2) .carousel__control,
+  #carousel3:checked ~ .carousel__stage .carousel__item:nth-child(3) .carousel__control,
+  #carousel4:checked ~ .carousel__stage .carousel__item:nth-child(4) .carousel__control {
+	display: block;
+  }
